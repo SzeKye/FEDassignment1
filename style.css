@@ -1,12 +1,14 @@
-* {
-  box-sizing: border-box;
+*{
+	box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
 
 }
 
-
+ul{
+	list-style: none;
+}
 
 header{
 	background-color: #000000;
@@ -88,19 +90,26 @@ a{
 #mod{
 	padding: 15px;
 }
-.center {
+.center { /* look at other pages first*/
 	display: flex;
-	top: 50%;
+	top: 40%;
 	width: 100%;
-	
 	flex-direction: column;
 	position: absolute;
 	text-align: center;
-	justify-content: center;
 	color: #000000;
 	
 }
-
+.center h1{
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 40px;
+}
+.center h2{
+	font-weight: 500;
+	font-size: 22px;
+	color: #FFFFFF;
+}
 .Games{
 	padding: 30px 0;
 	background-color: #2C2C2C
@@ -209,13 +218,20 @@ hr{
 }
 
 .legal{
-	list-style: none;
 	display: flex;
-	
+	justify-content: center;
 	gap: 24px;
 	
 }
-
+.office_locations{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	font-size: 24px;
+	font-weight: 600;
+	
+}
 .footer_padding{
 	padding: 21px 0px;
 }
@@ -271,3 +287,84 @@ padding: 2%;
 #supercell_stats{
 	float: right;
 }
+.ext_container{
+	width: 100%;
+}
+.container {
+	display: flex;
+	width: 100%;
+	background-color: #fff;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px 135px;
+
+}
+.a11{
+	display: flex;
+	flex-wrap: wrap;
+}
+#a2{
+	display: flex;
+	flex-wrap: wrap;
+}
+.a1{
+	flex: 50%;
+	max-width: 50%;
+}
+.a1 img{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+.a2 img{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+.a2{
+	flex: 25%;
+	max-width: 25%;
+}
+
+.vid_container{
+	width: 100%;
+	text-align: center;
+	
+}
+
+.des_container {
+	text-align: center;
+	width: 100%;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 15px
+}
+#location {
+	text-align: center;
+	
+}
+#location h1{
+	font-size: 40px;
+	font-weight: 700;
+	color: #000000;
+}
+#location h2{
+	font-size: 30px;
+	font-weight: 600;
+	color: #2D85F3;
+}
+
+#career_title{
+	padding: 25px 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#Career_position{
+	margin-left: 24em;
+}
+
+#Career_category{
+	margin-left: 15em;
+}
+
