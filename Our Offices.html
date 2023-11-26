@@ -14,19 +14,21 @@
     <body>
         <header>
             <section class="nav_bar">
-				<nav class="nav_options">
+				<nav class="header_nav_options">
 					<a href="/index.html"><img src="supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
-					<div>
-						<a href="#Games">Games</a>
-						<a href="#support">Support</a>
-						<a href="#About Us">About Us</a>
-						<a href="#Work With Us">Work With Us</a>
-                    </div>
-					<section class= "related" >
-						<a href="https://creators.supercell.com/en"><img src="creators.png" alt="Supercell" class = "icon" width= "36"></a>
-						<a href="https://make.supercell.com/en/"><img src="make.png" alt="Supercell" class = "icon" width= "36"></a>
-						<a href="https://supercell.com/en/supercell-id/"><img src="id.png" alt="Supercell ID" class = "icon" width= "36"></a>
-						<a href="https://supercell.com/en/supercell-id/"><img src="search.png" alt="search" width= "25"></a>
+
+					<section id="header_options">
+						<a href="#Games" style="margin-right: 5px;">Games</a>
+						<a href="#support" style="margin-right: 5px;">Support</a>
+						<a href="#About Us" style="margin-right: 5px;">About Us</a>
+						<a href="#Work With Us" style="margin-right: 5px;">Work With Us</a>
+                    </section>
+
+					<section id= "header_related">
+						<a href="https://creators.supercell.com/en"><img src="creators.png" alt="Supercell" class = "icon" width= "36px"></a>
+						<a href="https://make.supercell.com/en/"><img src="make.png" alt="Supercell" class = "icon" width= "36px"></a>
+						<a href="https://supercell.com/en/supercell-id/"><img src="id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
+						<a href="https://supercell.com/en/supercell-id/" style="margin-top: 5px;"><img src="search.png" alt="search" width= "20px"></a>
 					</section>
                 </nav>
 				
@@ -40,7 +42,7 @@
 			</section>
 		</section>
 		<section class="des_container">
-			<p>Our global teams are home to individuals from over 40 nationalities. We<br> 
+			<p>Our global teams are home to individuals from over 40 nationalities. We<br>
 			believe in transparency, open communication and spending time with one<br> 
 			another. While all teams have their own unique traits, it's the underlying<br> 
 			culture, shared values and love for games that keep us together.</p>
@@ -49,10 +51,10 @@
 		<section>
 			<nav class="footer_padding">
 				<ul class="office_locations">
-					<li><a href="" target="_self">Helsinki, Finland</a></li>
-					<li><a href="" target="_self">San Francisco, United States</a></li>
-					<li><a href="" target="_self">Shanghai, China</a></li>
-					<li><a href="" target="_self">Seoul, South Korea</a></li>
+					<li><a href="" target="_self"><b>Helsinki, Finland</b></a></li>
+					<li><a href="" target="_self"><span style="color: #666666;">San Francisco, United States</span></a></li>
+					<li><a href="" target="_self"><span style="color: #666666;">Shanghai, China</span></a></li>
+					<li><a href="" target="_self"><span style="color: #666666;">Seoul, South Korea</span></a></li>
 				</ul>
 			</nav>
 		</section>
@@ -62,7 +64,7 @@
 		</section>
 		<section class ="des_container">
 			<p>
-				It's a poorly kept secret that Supercell's first office was a snug 35m2 room that had to fit 15 people,<br>
+				It's a poorly kept secret that Supercell's first office was a snug 35m<sup>2</sup> room that had to fit 15 people,<br>
 				their laptops and a coffee-maker. Eventually the CEO moved his desk (a cardboard box at the time)<br>
 				out into the hallway to free up some space. In 2021, after outgrowing a number of locations around<br>
 				Helsinki, we opened our own, custom-designed office on the seafront, just south of the city center.
@@ -72,16 +74,14 @@
 			<iframe width="80%" height="650px" src="https://www.youtube.com/embed/3fLxSw42RZk?si=VJcrJDkTf3PfPzWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</section>
 		<section class="container">
-			
-			<section class="a11">
-				<section class="a1"><img src="helsinki_workplace.png"></section>
-				<section class="a1"><img src="helsinki_workplace_1.png"></section>
-				<section id="a2">
-					<section class="a2"><img src="helsinki_workplace_3.png"></section>
-					<section class="a2"><img src="helsinki_workplace_4.png"></section>
-					<section class="a2"><img src="helsinki_workplace_5.webp"></section>
-					<section class="a2"><img src="step1.4c7b5b6d.webp"></section>
-				</section>
+			<section class="img_container">
+				<section class="img_1"><img src="helsinki_workplace_2.png" alt="helsinki_workplace" width="71%"></section>
+				<section class="img_2"><img src="helsinki_workplace.png" alt="helsinki_workplace" width="90%"></section>
+				<section class="img_3"><img src="helsinki_workplace_3.png" alt="helsinki_workplace" width="86%"></section>
+			</section>
+			<section class="img_container2">
+				<section class="img_4"><img src="helsinki_workplace_1.png" alt="helsinki_workplace" width="98%"></section>
+				<section class="img_5"><img src="helsinki_workplace_4.png" alt="helsinki_workplace" width="98%"></section>
 			</section>
 		</section>
 		
@@ -96,39 +96,81 @@
 				sessions and casual conversations.
 			</p>
 		</section>
-		<section >
-			<section id="career_title">
+		<section>
+			<section id="open_positions">
 				<h2>HELSINKI OPEN POSITIONS</h2>
 			</section>
-			<section>
-				<section><p>Job Title</p></section>
-				<section><button id="Career_position">Position</button></section>
-				<section><button id="Career Category">Category</button></section>
+			<section id="career_padding">
+				<section class="career_header">
+					<section class="career_title"><button class="sort">Job Title</button></section>
+					<section class="career_position"><button class="sort">Position</button></section>
+					<section class="career_category"><button class="sort">Category</button></section>
+				</section>
+				<section>
+					<a href="" class="career_section">
+						<p class="career_title">Data Intern, Localisation</p>
+						<p class="career_position">INTERNSHIP</p>
+						<p class="career_category">TECH & ANALYTICS</p>
+						<p class="apply_option">APPLY</p>
+					</a>
+				
+					<a href="" class="career_section">
+						<p class="career_title">Lead Producer</p>
+						<p class="career_position">FULLTIME</p>
+						<p class="career_category">GAME DEVELOPMENT</p>
+						<p class="apply_option">APPLY</p>
+					</a>
+
+					<a href="" class="career_section">
+						<p class="career_title">Senior AV Designer</p>
+						<p class="career_position">FULLTIME</p>
+						<p class="career_category">OTHER</p>
+						<p class="apply_option">APPLY</p>
+					</a>
+
+					<a href="" class="career_section">
+						<p class="career_title">Senior Community Manager, Clash of Clans,<br>Clash Royale or Hay Day</p>
+						<p class="career_position">FULLTIME</p>
+						<p class="career_category">TECH & ANALYTICS</p>
+						<p class="apply_option">APPLY</p>
+					</a>
+
+					<a href="" class="career_section">
+						<p class="career_title">Product Design Lead, Supercell X</p>
+						<p class="career_position">FULLTIME</p>
+						<p class="career_category">BUSINESS & OPERATIONS</p>
+						<p class="apply_option">APPLY</p>
+					</a>
+
+					<a href="" class="career_section">
+						<p class="career_title">Senior UI Artist, Clash Royale</p>
+						<p class="career_position">FULLTIME</p>
+						<p class="career_category">GAME DEVELOPMENT</p>
+						<p class="apply_option">APPLY</p>
+					</a>
+				</section>
+				<section id="button_ext"><button id="show_all_button">Show All Positions</button></section>
+				<script src="assignment.js"></script>
 			</section>
-			<ul>
-				<li><a href=""></a></li>
-				<li></li>
-			</ul>
 		</section>
 		
-		<footer role="contentinfo" class="btm">
-			<section class= "f">
-				<nav class="nav_options">
-					
+		<footer role="contentinfo" class="footer_ext">
+			<section class= "footer_int">
+				<nav class="footer_nav_options">	
                         <a href="/index.html"><img src= "supercell-logo-white-transp.png" alt="Supercell" height="62"></a>
 						<section id="social">
-							<a href="https://www.youtube.com/supercell"><img src="Youtube Supercell.png" alt="Youtube" height= "32"></a>
-							<a href="https://www.facebook.com/supercell"><img src="Facebook Supercell.png" alt="Facebook" height= "32"></a>
-							<a href="https://www.instagram.com/supercell/"><img src="Instagram Supercell.png" alt="Instagram" height= "32"></a>
-							<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsupercell"><img src="Twitter Supercell.png" alt="Twitter" height= "32"></a>
-							<a href="https://www.linkedin.com/company/supercell/"><img src="Linkedin Supercell.png" alt="LinkedIn" height= "32"></a>
-							<a href="https://www.glassdoor.com/Overview/Working-at-Supercell-EI_IE511675.11,20.htm"><img src="Glassdoor Supercell.png" alt="Glassdoor" height= "32"></a>
+							<a href="https://www.youtube.com/supercell"><img src="Youtube Supercell.png" alt="Youtube" height= "32px"></a>
+							<a href="https://www.facebook.com/supercell"><img src="Facebook Supercell.png" alt="Facebook" height= "32px"></a>
+							<a href="https://www.instagram.com/supercell/"><img src="Instagram Supercell.png" alt="Instagram" height= "32px"></a>
+							<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsupercell"><img src="Twitter Supercell.png" alt="Twitter" height= "32px"></a>
+							<a href="https://www.linkedin.com/company/supercell/"><img src="Linkedin Supercell.png" alt="LinkedIn" height= "32px"></a>
+							<a href="https://www.glassdoor.com/Overview/Working-at-Supercell-EI_IE511675.11,20.htm"><img src="Glassdoor Supercell.png" alt="Glassdoor" height= "32px"></a>
 						</section>
 					
 					
-					<section class="related">
-						<a href="https://apps.apple.com/us/developer/supercell/id488106216"><img src="Appstore Supercell.png" alt="Appstore" width= "120"></a>
-						<a href="https://play.google.com/store/apps/dev?id=6715068722362591614&hl=en"><img src="Google Play Store Supercell.png" alt="Appstore" width= "135"></a>
+					<section id="footer_related">
+						<a href="https://apps.apple.com/us/developer/supercell/id488106216"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+						<a href="https://play.google.com/store/apps/dev?id=6715068722362591614&hl=en"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
 					</section>
 				</nav>
 				<hr>
@@ -146,7 +188,7 @@
 					</nav>
 				</section>
 				<section class="btn">
-					<a href="About Us.html">To the Surface</a>
+					<a href="">To the Surface</a>
 				</section>
 			</section>
 		</footer>
