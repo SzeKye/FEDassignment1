@@ -142,49 +142,20 @@ a{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	
+	padding: 0 40px;
 }
 .Games h1{
 	color: #FFFFFF;
 	padding: 0 40px;
 }
 
-.hay_day_bg{
+.game_bg{
 	display: flex;
 	width: 40%;
 	position: relative;
 }
 
-.coc_bg{
-	display: flex;
-	width: 40%;
-	position: relative;
-}
-.bb_bg{
-	display: flex;
-	width: 40%;
-	position: relative;
-}
-
-.cr_bg{
-	display: flex;
-	width: 40%;
-	position: relative;
-}
-
-.bs_bg{
-	display: flex;
-	width: 40%;
-	position: relative;
-}
-
-.soon_bg{
-	display: flex;
-	width: 40%;
-	position: relative;
-	text-align: center;
-}
-.soon_bg h3{
+.game_bg h3{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
@@ -192,10 +163,9 @@ a{
 }
 
 .logo {
-	left: 50px;
-	top: 150px;
 	position: absolute;
-		
+	left: 30px;
+	top: 120px;
 }
 
 .footer_ext{
