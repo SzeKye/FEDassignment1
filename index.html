@@ -5,141 +5,269 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="stylesheet" href="style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-      </head>
+    </head>
+	<style>
+		.hero_txt h1 {
+			color: #000000;
+			font-weight: 600;
+			font-size: 40px;
+			margin-bottom: 15px;
+		}
+		.hero_txt p{
+			font-weight: 500;
+			font-size: 20px;
+			color: #000000;
+		}
+
+		.hiring_info h1{
+			color: #000;
+			font-weight: 600;
+			font-size: 2em;
+			margin-top: 30px;
+			margin-bottom: 0px;
+
+		}
+
+		.Games h3{
+			color: #ffffff;
+			font-weight: 500;
+			font-size: 30px;
+		}
+		.main_news img{
+			border-radius: 8px;
+		}
+		.news_ext p{
+			font-size: 18px;
+			text-transform: uppercase;
+			color: rgba(242,242,242,0.4);
+			font-weight: 500;
+		}
+		.news_title h2{
+			font-size: 21px;
+		}
+
+		.logo h3{
+			position: absolute;
+			left: 30%;
+			top: 50%;
+			transform:translate(10px,10px);
+		}
+		.music_section_title{
+			position: absolute;
+			left: 15%;
+			top: 33%;
+		}
+	</style>
     <body>
         <header>
             <section class="nav_bar">
 				<nav class="header_nav_options">
-					<a href="/index.html"><img src="supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+					<a href="/index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
 
 					<section id="header_options">
-						<a href="#Games" style="margin-right: 5px;">Games</a>
-						<a href="#support" style="margin-right: 5px;">Support</a>
-						<a href="#About Us" style="margin-right: 5px;">About Us</a>
-						<a href="#Work With Us" style="margin-right: 5px;">Work With Us</a>
+						<a href="Games.html">Games</a>
+						<a href="Support.html">Support</a>
+						<a href="About Us.html">About Us</a>
+						<a href="Our Offices.html">Work With Us</a>
                     </section>
 
 					<section id= "header_related">
-						<a href="https://creators.supercell.com/en"><img src="creators.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="https://make.supercell.com/en/"><img src="make.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="https://supercell.com/en/supercell-id/"><img src="id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
-						<a href="https://supercell.com/en/supercell-id/" style="margin-top: 5px;"><img src="search.png" alt="search" width= "20px"></a>
+						<a href="#https://creators.supercell.com/en"><img src="images/creators.png" alt="Supercell" class = "icon" width= "36px"></a>
+						<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" class = "icon" width= "36px"></a>
+						<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
+						<a style="margin-top: 5px;"><img src="images/search.png" alt="search" width= "20px"></a>
 					</section>
                 </nav>
 				
             </section>	
         </header>
 		<section>
-			<img src="index_hero.png" alt="Hero" width= "100%">
-		  	<section class="center">
+			<img src="images/index_hero.png" alt="Hero" width= "100%">
+		  	<section class="hero_txt">
 				<h1>Supercell</h1>
-				<p>Makers of Hay Day, Clash of Clans, Boom<br>Beach, Clash Royale and Brawl Stars.</p>
+				<p>Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale<br>and Brawl Stars.</p>
 			</section>
 		</section>
 		
 		
-	<section class="news">
-			<h1>News</h1>
+		<section class="news_ext">
+			<h1>What's happening?</h1>
 			
-			
-	  <a target="_self" href="#" class = "main_news">
-		<figure class="main_news_image">
-			<img src= "ClashOnPC.png" alt= "Clash is available on PC" width="60%">
-			<figcaption class="main_news_info">
-				<h2>Clash of Clans and Clash Royale are now officially available on PC!</h2>
-				<p>News</p>
-			</figcaption>
-		</figure>
-		</a>
-				
-	  <section class="secondary_news">
-				<ul class= "secondary_news_list">
-					<li>
-						<section>
-							<a href="#"><img src="news_1.png" alt="GDC" width="20%">
-								<h2>Looking Forward to Meeting You</h2><p>News</p></a>
-						</section>
-					</li>
-					<li>
-						<section>
-							<a href="#"><img src="meet-clash.png" alt="Picture of Clash team" width= "20%">
-								<h2>The Clash of Clans Team Welcomes You</h2><p>Careers</p></a>
-						</section>
-					</li>
-					<li>
-						<section>
-							<a href="#"><img src="everdale.png" alt="Everdale" width="20%">
-								<h2>Everdale's Story Continues, thanks to Metacore</h2><p>News</p></a>
-						</section>
-					</li>
-				</ul>
-			</section>
-			
+			<section class="news_int">
+				<a target="_self" href="#" class = "main_news">
 
-			
+					<section class="main_title"><h2>Clash of Clans and Clash Royale are now officially<br>available on PC!</h2>
+						<p>News</p>
+					</section>
+					<img src= "images/ClashOnPC.png" alt= "Clash is available on PC" width="100%">
+				</a>
+
+				<section class="secondary_news">
+					<section class= "secondary_news_list">
+					
+						<section class="secondary_news_article">
+							<a href="#Looking Forward to Meeting You"><img src="images/GDC.png" alt="GDC" width="100%">
+								<section class="news_title">
+									<h2>Looking Forward to Meeting You</h2>
+									<p>News</p>
+								</section>
+							</a>
+						</section>
+					
+						<section class="secondary_news_article">
+							<a href="#The Clash of Clans Team Welcomes You"><img src="images/clashteam.png" alt="Picture of Clash team" width= "100%">
+								<section class="news_title">
+									<h2>The Clash of Clans Team Welcomes You</h2>
+									<p>Careers</p>
+								</section>
+							</a>
+						</section>
+					
+						<section class="secondary_news_article">
+							<a href="#Everdale's Story Continues, thanks to Metacore"><img src="images/everdale.png" alt="Everdale" width="100%">
+								<section class="news_title">
+									<h2>Everdale's Story Continues, thanks to Metacore</h2>
+									<p>News</p>
+								</section>
+							</a>
+						</section>
+					
+					</section>
+				</section>
+			</section>
 		</section>
-        <br>
+
 		<section class="Games">
-			<h1>Entertainment</h1>
+			<h1>Games</h1>
 			<section class= "Game_list">
 				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="Music.png" alt="Music" width= "100%">
+					<a target="_self">
+						<img src="images/HayDay.png" alt="Hay Day" width= "100%">
 						<section class="logo">
-							<h3>Music</h3>
+							<img src="images/hayday_logo.png" alt="Logo" width="20%">
 						</section>
 					</a>
 				</section>
 				<section class="game_bg">
 					<a target="_self" href="">
-
-						<img src="Animations.png" alt="Animations" width= "100%">
-						<h3>Animations</h3>
+						<img src="images/ClashOfClans.png" alt="Clash of Clans" width= "100%">
+						<section class="logo">
+							<img src="images/coc_logo.png" alt="Logo" width="23%">
+						</section>
 					</a>
 				</section>
-				
+				<section class="game_bg">
+					<a target="_self" href="">
+						<img src="images/BoomBeach.png" alt="Boom Beach" width= "100%">
+						<section class="logo">
+							<img src="images/boombeach_logo.png" alt="Logo" width="20%">
+						</section>
+					</a>
+				</section>
+				<section class="game_bg">
+					<a target="_self" href="">
+						<img src="images/ClashRoyale.png" alt="Clash Royale" width= "100%">
+						<section class="logo">
+							<img src="images/clashroyale_logo.png" alt="Logo" width="23%">
+						</section>
+					</a>
+				</section>
+				<section class="game_bg">
+					<a target="_self" href="">
+						<img src="images/BrawlStars.png" alt="Brawl Stars" width= "100%">
+						<section class="logo">
+							<img src="images/brawlstars_logo.png" alt="Logo" width="20%" style="margin-left: 15px;">
+						</section>
+					</a>
+				</section>
+				<section class="game_bg">
+					<a target="_self" href="">
+						<img src="images/ComingSoon.png" alt="Coming Soon" width= "100%">
+						<h3>Coming Soon</h3>
+					</a>
+				</section>	
 			</section>
 			
+			<section class="Entertainment">
+					<h1>Entertainment</h1>
+				<section class= "Game_list">
+					<section class="game_bg">
+						<a target="_self" href="">
+							<img src="images/Music.png" alt="Music" width= "100%">
+							<section class="music_section_title">
+								<h3>Music</h3>
+							</section>
+						</a>
+					</section>
+					<section class="game_bg">
+						<a target="_self" href="">
+
+							<img src="images/Animations.png" alt="Animations" width= "100%">
+							<h3>Animations</h3>
+						</a>
+					</section>
+					
+				</section>
+			</section>
 		</section>
 		
 		
 		<section class="hiring">
 			<section class="hiring_info">
-			  <img src="knight.jpg" alt="Onwards" >
-			</section>
-			<section class="hiring_info">
 				<h1>WE'RE HIRING!</h1>
-					<p>Join us to create games that<br>excite and help our players<br>around the world make<br>memories. </p>
-					<a href="#">See Careers</a>
+					<p>Join us to create games that excite and help our players around the world make memories. </p>
+					<a href="#">Explore Careers</a>
 				
 			</section>
-			
-	</section>
+			<section class="hiring_image">
+			  <img src="images/knight.png" alt="Onwards" width="85%" >
+			</section>
+		</section>
+
+		<a class="chat-button" onclick="openChat()"><img src="images/starr icon.jpg" alt="supercell bot profile picture" width="30%"  style="border-radius: 100%;"></a>
+		<section class="chat-popup" id="conversation">
+			<form class="form-container">
+				<section class="chatbot_header">
+					<img src="images/starr icon.jpg" alt="supercell bot profile picture" class="profile_picture">
+					<h2>Ask Supercell</h2>
+					<button type="button" class="cancel" onclick="closeChat()">X</button>
+				</section>
+				
+				<section class="first_message">
+					<p>Hello! I'm Supercell's virtual assistant and I am here to assist you. </p>
+				</section>
+				<section class="first_message">
+					<p>Here's a tip: Ask your question in simple and short sentences.</p>
+				</section>
+				<textarea placeholder="Type your message here" name="msg" required></textarea>
+
+				<button type="submit" class="btn">Send</button>
+				
+			</form>
+		</section>
 		
-		
-		
+	<script src="assignment.js"></script>	
 	<footer role="contentinfo" class="footer_ext">
 		<section class= "footer_int">
 			<nav class="footer_nav_options">	
-					<a href="/index.html"><img src= "supercell-logo-white-transp.png" alt="Supercell" height="62"></a>
+					<a href="/index.html"><img src= "images/supercell-logo-white-transp.png" alt="Supercell" height="62"></a>
 					<section id="social">
-						<a href="https://www.youtube.com/supercell"><img src="Youtube Supercell.png" alt="Youtube" height= "32px"></a>
-						<a href="https://www.facebook.com/supercell"><img src="Facebook Supercell.png" alt="Facebook" height= "32px"></a>
+						<a href="https://www.youtube.com/supercell"><img src="images/Youtube Supercell.png" alt="Youtube" height= "32px"></a>
+						<a href="https://www.facebook.com/supercell"><img src="images/Facebook Supercell.png" alt="Facebook" height= "32px"></a>
 						<a href="https://www.instagram.com/supercell/"><img src="Instagram Supercell.png" alt="Instagram" height= "32px"></a>
-						<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsupercell"><img src="Twitter Supercell.png" alt="Twitter" height= "32px"></a>
-						<a href="https://www.linkedin.com/company/supercell/"><img src="Linkedin Supercell.png" alt="LinkedIn" height= "32px"></a>
-						<a href="https://www.glassdoor.com/Overview/Working-at-Supercell-EI_IE511675.11,20.htm"><img src="Glassdoor Supercell.png" alt="Glassdoor" height= "32px"></a>
+						<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsupercell"><img src="images/Twitter Supercell.png" alt="Twitter" height= "32px"></a>
+						<a href="https://www.linkedin.com/company/supercell/"><img src="images/Linkedin Supercell.png" alt="LinkedIn" height= "32px"></a>
+						<a href="https://www.glassdoor.com/Overview/Working-at-Supercell-EI_IE511675.11,20.htm"><img src="images/Glassdoor Supercell.png" alt="Glassdoor" height= "32px"></a>
 					</section>
 				
 				
 				<section id="footer_related">
-					<a href="https://apps.apple.com/us/developer/supercell/id488106216"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
-					<a href="https://play.google.com/store/apps/dev?id=6715068722362591614&hl=en"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
+					<a href="https://apps.apple.com/us/developer/supercell/id488106216"><img src="images/Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+					<a href="https://play.google.com/store/apps/dev?id=6715068722362591614&hl=en"><img src="images/Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
 				</section>
 			</nav>
 			<hr>
@@ -156,8 +284,8 @@
 					</ul>
 				</nav>
 			</section>
-			<section class="btn">
-				<a href="">To the Surface</a>
+			<section class="surface_btn">
+				<button class="surface_btn" onclick="ToTop()">To the Surface</button>
 			</section>
 		</section>
 	</footer>

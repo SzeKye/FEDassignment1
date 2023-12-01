@@ -3,7 +3,8 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-
+	overflow-x: hidden;
+	margin: 0;
 }
 
 ul{
@@ -13,6 +14,8 @@ ul{
 header{
 	background-color: #000000;
 	position: sticky;
+	top: 0;
+	z-index: 1;
 	position: -webkit-sticky; /* For Safari*/
 }
 
@@ -20,6 +23,7 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
+/* header nav_bar */
 .nav_bar{
 	display: flex;
 	align-items: center;
@@ -31,13 +35,23 @@ a{
     
 }
 
-.footer_nav_options{
-	display:flex;
-	align-items: center;
-	justify-content: space-between;
-	width:100%;
-	
+.nav_bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;	
 }
+
+.nav_bar a:hover{
+    color: #939393;
+}
+
+.nav_bar a:active{
+    color: #ffffff;
+}
+
 .header_nav_options{
 	display:flex;
 	align-items: center;
@@ -48,39 +62,13 @@ a{
 	margin: 0 25em 0 3em;
 	gap: 24px;
 }
+
 #header_options a{
 	font-size: 20px;
 	font-weight: 400;
-}
-.nav_bar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;	
+	margin-right: 5px;
 }
 
-.nav_options div{
-	padding-right:20vw;
-}
-
-.nav_options div a{
-	font-size: 1.5em;
-}
-.nav_bar a:hover{
-    color: #ffffff;
-}
-
-.nav_bar a:active{
-    color: #ffffff;
-}
-
-#footer_related{
-	float: right;
-	text-align: center;
-	position: relative;	
-}
 
 #header_related{
 	float: right;
@@ -88,86 +76,103 @@ a{
 	position: relative;
 	
 }
+
 #header_related a{
 	margin: 0 10px;
 }
 
-#footer_related a{
-	padding: 5px;
+/* Button used to open the chat form - fixed at the bottom of the page */
+.chat-button {
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: -100px;
 }
-
-.main_news{
-	display: block;
-	
-	
-	
+  
+  /* The popup chat - hidden by default */
+.chat-popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	z-index: 1;
+	border-radius: 10px;
 }
-
-
-.secondary_news{
-	display: grid;
-	gap:15px;
-}
-
-.secondary_news_list{
-	list-style: none;
-}
-
-.center { /* look at other pages first*/
-	display: flex;
-	top: 40%;
+  
+  /* Add styles to the form container */
+  .chat-container {
+	max-width: 300px;
+	background-color: white;
+	border-radius: 10px;
+  }
+  
+  /* Full-width textarea */
+  .chat-container textarea {
 	width: 100%;
-	flex-direction: column;
-	position: absolute;
-	text-align: center;
-	
-}
-.center h1{
-	color: #FFFFFF;
-	font-weight: 600;
-	font-size: 40px;
-}
-.center h2{
-	font-weight: 500;
-	font-size: 22px;
-	color: #FFFFFF;
-}
-.Games{
-	padding: 30px 0;
-	background-color: #2C2C2C
-}
-
-.Game_list{
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .chat-container textarea:focus {
+	background-color: #ddd;
+	outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+.chat-container .btn {
+	background-color: #21C49F;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
 	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+}
+
+.first_message{
+	border-radius:8px;
+	background-color: #f1f1f1;
+	width:50%;
+	height: 50%;
+	font-size:12px;
+	padding:10px;
+	margin-bottom: 5px;
+}
+
+.chatbot_header{
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	padding: 0 40px;
-}
-.Games h1{
-	color: #FFFFFF;
-	padding: 0 40px;
+	background-color: #2C2C2C;
+	color: #fff;
+	vertical-align: middle;
+	padding: 10px;
 }
 
-.game_bg{
-	display: flex;
-	width: 40%;
-	position: relative;
+.profile_picture{
+	width:10%;
+	height:10%; 
+	border-radius: 100%;
+}
+  /* Add a red background color to the cancel button */
+.chat-container .cancel {
+	background-color: #2C2C2C;
+	cursor: pointer;
+	border: none;
+	font-size: 30px;
+	color: #fff;
 }
 
-.game_bg h3{
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	position: absolute;
+/* Add some hover effects to buttons */
+.chat-container .btn:hover, .open-button:hover {
+opacity: 1;
 }
-
-.logo {
-	position: absolute;
-	left: 30px;
-	top: 120px;
-}
-
+/* classes in footer */
 .footer_ext{
 	background-color: #000000;
 	color: #ffffff;
@@ -181,6 +186,164 @@ a{
 	max-width: 90%;
 }
 
+.footer_nav_options{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	width:100%;
+	
+}
+/* displays a line inbetween the social media icons and words in footer */
+hr{
+	background-color:#737272;
+	border-width:0;
+	height: 1px;
+}
+
+/* social media icons */
+#social{
+	display: flex;
+	flex-direction: row;
+	margin-left: 90px;
+	position: absolute;
+	gap:24px;
+	
+}
+/* play store icons */
+#footer_related{
+	float: right;
+	text-align: center;
+	position: relative;	
+}
+
+#footer_related a{
+	padding: 5px;
+}
+
+.footer_padding{
+	padding: 21px 0px;
+}
+
+.legal{
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	font-size: 18px;
+}
+
+.surface_btn{
+	float:right;
+	border: none;
+	background-color: #000000;
+	color: #ffffff;
+	cursor: pointer;
+}
+.surface_btn:hover{
+	color: #F7DB1C;
+}
+.news_ext {
+	background-color: #2C2C2C;
+	color: #FFFFFF;
+	padding:40px;
+	margin-bottom: -40px;
+}
+
+.news_int{
+	flex-direction: row;
+	display: flex;
+}
+
+.main_news {
+	flex: 21%;
+	padding: 10px;
+	position: relative;
+}
+
+.main_title{
+	position: absolute;
+    left: 5%;
+    top: 60%;
+    width: 100%;
+}
+
+.secondary_news{
+	flex: 40%;
+	flex-direction: column;
+	padding: 10px;
+	
+}
+.secondary_news_article{
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.news_title{
+	margin-top: -7em;
+    padding: 0 15px;
+    position: absolute;
+}
+
+.hero_txt { /* look at other pages first*/
+	display: flex;
+	top: 40%;
+	width: 100%;
+	flex-direction: column;
+	position: absolute;
+	text-align: center;
+}
+.hero_txt h1{
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.hero_txt p{
+	font-weight: 500;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+.Games{
+	padding: 40px 40px 70px 40px;
+    background-color: #2C2C2C;
+}
+
+.Game_list{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.Games h1,.news_ext h1, #form_header h1{
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 3em;
+	padding-left: 30px;
+}
+
+.game_bg{
+	display: flex;
+    width: 48%;
+    position: relative;
+    padding: 15px;
+}
+
+.game_bg h3{
+	left: 50%;
+    top: 41%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.logo {
+	position: absolute;
+    left: 5%;
+    top: 33%;
+}
+
+
+
 .social_ext{
 	align-content: space-between;
 	display: flex;
@@ -192,29 +355,11 @@ a{
 	padding-right: 15px;
 	padding-top: 5px;
 }
-hr{
-	background-color:#737272;
-	border-width:0;
-	height: 1px;
-}
-#social{
-	display: flex;
-	flex-direction: row;
-	margin-left: 90px;
-	position: absolute;
-	gap:24px;
-	
-}
+
 .sg{
 	flex-grow: 1;
 }
 
-.legal{
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	font-size: 18px;
-}
 .office_locations{
 	list-style: none;
 	display: flex;
@@ -224,13 +369,7 @@ hr{
 	font-weight: 500;
 	
 }
-.footer_padding{
-	padding: 21px 0px;
-}
 
-.btn{
-	float:right;
-}
 .btn2{
 	background-color: #000000;
 	color: #FFFFFF;
@@ -245,17 +384,15 @@ hr{
 	flex-basis: 45%;
 	display: flex;
 	flex-direction: column;
-padding: 2%;
-	
+	padding: 4%;
+	text-align: center;
+	align-items: center;
 }
 .hiring_image{
-	flex: 1 1 55%;
     display: flex;
-    align-items: center;
+    justify-content: end;
 }
-/*.inner{
-	padding: 80px 30px;
-}*/
+
 .hiring_info a{
 	background-color: #2D85F3;
 	color: white;
@@ -267,8 +404,14 @@ padding: 2%;
 	margin: 4px 2px;
 	font-size: 16px; 
 	border-radius: 10px;
+	width:15em;
+	font-weight: 500;
 }
 
+.hiring_info p{
+	font-size: 20px;
+	margin: 30px;
+}
 #supercell_title{
 	text-align: center;
 	flex-direction: row;
@@ -279,15 +422,18 @@ padding: 2%;
 }
 
 #supercell_description{
-	width: 40%;
+	width: 34%;
 	display: flex;
 	flex-direction: row;
 	text-align: start;
+	font-size: 20px;
 }
 #supercell_stats{
 	width: 30%;
 	display: flex;
 	text-align: start;
+	font-size: 20px;
+	justify-content: center;
 }
 .ext_container{
 	width: 100%;
@@ -461,7 +607,7 @@ padding: 2%;
 }
 
 #button_ext {
-	
+	text-align: center;
 	padding-bottom: 100px;
 	padding-top: 20px;
 }
@@ -491,3 +637,89 @@ padding: 2%;
 	text-align: center;
 	justify-content: center;
 }
+
+.fade {
+	animation: fade;
+	animation-duration: 1000ms;
+}
+
+@keyframes fade{
+	from {opacity: 0.4;}
+	to {opacity: 1;}	
+}
+
+.game_des{
+	display: flex;
+    background: rgba(0,0,0, 0.2);
+    color: #ffffff;
+    flex-direction: row;
+    width: 90%;
+    position: absolute;
+    margin: 31em 4em 0;
+	border-radius: 8px;
+}
+.game_details{
+	flex: auto;
+	margin-left: 2em;
+	font-weight: 500;
+}
+/* special for hay day due to its longer description */
+.game_detail_special{ 
+	flex: auto;
+	margin-left: 1em;
+}
+
+.game_link{
+	flex: auto;
+	margin-top: 3em;
+	text-align: center;
+}
+
+.nav_bullet {
+	cursor: pointer;
+	height: 10px;
+	width: 40px;
+	margin: 1em 2px;
+	background-color: #939393;
+	border-radius: 40px;
+	display: inline-block;
+	transition: background-color 0.5s ease-in-out; /*so that it doesnt abrupty change*/
+	/* background color property is to transition smoothly over 0.6s with an ease in and out function*/
+  }
+
+.nav_bullet:hover {
+	background-color: #2D85F3;
+}
+
+.show{
+	background-color: #2D85F3;
+	width: 100px;
+}
+.game_imgs{
+	position: relative;
+	width: 100%;
+}
+/*left and right buttons*/
+.left, .right{
+	cursor: pointer;
+	top:50%;
+	font-size: 50px;
+	font-weight: 700;
+	width: auto;
+	position: absolute;
+	padding: 16px;
+	margin-top: -75px;
+	transition: all 0.5s ease-in-out; /*arrow keys will have ease in out transition spanning 0.5s*/
+	user-select: none;
+	border-radius: 10px;
+	opacity: 0.5;
+}
+
+.left:hover, .right:hover{
+	background-color: #939393;
+}
+
+.separator{
+	right: 0;
+}
+

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        #form_header h1{
+            color: #000;
+        }
+        .form{
+            display: inline-block;
+            width: 100%;
+        }
+
+        #login_details{
+            padding: 0 45vw;
+            flex: 45%;
+        }
+
+        #form_header{
+            text-align: center;
+        }
+        #login_img{
+            text-align: center;
+        }
+        .btn{
+            background-color: #2D85F3;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 10px 2px;
+            font-size: 16px; 
+            border-radius: 10px;
+            width:15em;
+            font-weight: 500;
+            border: none;
+        }
+    </style>
+    <header>
+        <section class="nav_bar">
+            <nav class="header_nav_options">
+                <a href="index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+            </nav>
+        </section>
+    </header>
+    <body>
+        <section class="form" id="signIn">
+            <form class="form_content">
+                <section id="form_header">
+                    <h1>Sign In</h1>
+                </section>
+                <section id="login_details">
+                    <label for="username">Supercell ID</label><br>
+                    <input type="text" name="username" id="username"placeholder="Enter Supercell ID" required><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+                    <section id="output">
+                    
+                    </section>
+                    <button type="submit" class="btn" id="submit_btn" onclick="signInForm()">Log In</button>
+                </section>
+                
+                <section id="login_img">
+                    <img src="images/supercell_id_safeguard.png" alt="Supercell ID" width="40%">   
+                </section>
+                
+            </form>
+            
+        </section>
+        <script src="assignment.js"></script>
+    </body>
+</html>

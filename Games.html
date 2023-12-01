@@ -4,96 +4,184 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mediaqueries.css" />
+        <title>Games</title>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-      </head>
+    </head>
+	<style>
+		.center p {
+			color: #ffffff;
+			font-weight: 400;
+		}
+		#game_hero{
+			margin: -4px;
+		}
+	</style>
     <body>
         <header>
             <section class="nav_bar">
 				<nav class="header_nav_options">
-					<a href="/index.html"><img src="supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+					<a href="index.html"><img src="supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
 
 					<section id="header_options">
-						<a href="#Games" style="margin-right: 5px;">Games</a>
-						<a href="#support" style="margin-right: 5px;">Support</a>
-						<a href="#About Us" style="margin-right: 5px;">About Us</a>
-						<a href="#Work With Us" style="margin-right: 5px;">Work With Us</a>
+						<a href="Games.html">Games</a>
+						<a href="Support.html">Support</a>
+						<a href="About Us.html">About Us</a>
+						<a href="Our Offices.html">Work With Us</a>
                     </section>
 
-					<section id= "header_related">
-						<a href="https://creators.supercell.com/en"><img src="creators.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="https://make.supercell.com/en/"><img src="make.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="https://supercell.com/en/supercell-id/"><img src="id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
-						<a href="https://supercell.com/en/supercell-id/" style="margin-top: 5px;"><img src="search.png" alt="search" width= "20px"></a>
+					<!-- supercell id, make, and creator program   -->
+					<section id= "header_related"> 
+						<a href="#https://creators.supercell.com/en"><img src="creators.png" alt="Supercell" class = "icon" width= "36px"></a>
+						<a href="#https://make.supercell.com/en/"><img src="make.png" alt="Supercell" class = "icon" width= "36px"></a>
+						<a href="#https://supercell.com/en/supercell-id/"><img src="id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
+						<a><img src="search.png" alt="search" width= "20px"></a>
 					</section>
                 </nav>
 				
             </section>	
         </header>
-		<section>
-			<img src="index_hero.png" alt="Hero" width= "100%">
-		  	<section class="center">
-				<h1>Supercell</h1>
-				<p>Makers of Hay Day, Clash of Clans, Boom<br>Beach, Clash Royale and Brawl Stars.</p>
+		<!-- Hero section -->
+		<section id="game_hero">
+			<img src="Contact Sheet-001.png" alt="Hero" width= "100%" style="filter: brightness(80%);">
+		  	<section class="hero_txt">
+				<h1>Games</h1>
+				<p style="text-transform:capitalize;">farm, clash, boom, battle, brawl!</p>
 			</section>
 		</section>
 
-		<section class="Games">
-			<h1>Games</h1>
-			<section class= "Game_list">
-				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="HayDay.png" alt="Hay Day" width= "100%">
-						<section class="logo">
-							<img src="hayday_logo.png" alt="Logo" width="20%">
-						</section>
-					</a>
-				</section>
-				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="ClashOfClans.png" alt="Clash of Clans" width= "100%">
-						<section class="logo">
-							<img src="coc_logo.png" alt="Logo" width="23%">
-						</section>
-					</a>
-				</section>
-				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="BoomBeach.png" alt="Boom Beach" width= "100%">
-						<section class="logo">
-							<img src="boombeach_logo.png" alt="Logo" width="20%">
-						</section>
-					</a>
-				</section>
-				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="ClashRoyale.png" alt="Clash Royale" width= "100%">
-						<section class="logo">
-							<img src="clashroyale_logo.png" alt="Logo" width="23%">
-						</section>
-					</a>
-				</section>
-				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="BrawlStars.png" alt="Brawl Stars" width= "100%">
-						<section class="logo">
-							<img src="brawlstars_logo.png" alt="Logo" width="20%" style="margin-left: 15px;">
-						</section>
-					</a>
-				</section>
-				<section class="game_bg">
-					<a target="_self" href="">
-						<img src="ComingSoon.png" alt="Coming Soon" width= "100%">
-						<h3>Coming Soon</h3>
-					</a>
-				</section>	
-			</section>
+		<section class="game_imgs">
+			<!-- Brawl Stars screen -->
+			<section class="game fade">
+				<section class="game_des">
+					<section class="game_details">
+						<h3 style="text-transform: uppercase;">3v3 and battle royale</h3>
+						<p>Time to BRAWL! Team up with your friends and get ready for epic multiplayer MAYHEM! Brawl Stars is the<br>
+							newest game from the makers of Clash of Clans and Clash Royale. Jump into your favorite game mode<br>
+							and play quick matches with your friends. Shoot 'em up, blow 'em up, punch 'em out and win the BRAWL.
+						</p>
+					</section>
 					
+					<section class="game_link">
+						<a href="https://itunes.apple.com/app/brawl-stars/id1229016807?mt=8"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=en"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
+					</section>
+				</section>
+				<img src="brawlstars_banner.png" alt="Brawl Stars" width="100%">
+			</section>
+			<!-- Boom Beach screen -->
+			<section class="game fade">
+				<section class="game_des">
+					<section class="game_details">
+						<h3 style="text-transform: uppercase;">Build. Plan. Boom</h3>
+						<p>Come with a plan or leave in defeat! Welcome to Boom Beach, an epic combat strategy game where your brains and your troop's brawn fight<br>
+							against the evil Blackguard. Attack bases to free enslaved islanders or create a task force with friends and other players to take on<br>
+							the enemy together, all while exploring and unlocking secrets, of this beautiful archipelago. Scout, plan, then BOOM THE BEACH!
+						</p>
+					</section>
+					
+					<section class="game_link">
+						<a href="https://itunes.apple.com/app/reef/id672150402?mt=8"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.supercell.boombeach&referrer=mat_click_id%3D7eaae9c2d9f3078d3a14bb1f01d94049-20141216-1681"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
+					</section>
+				</section>
+				<img src="boombeach_banner.png" alt="Boom Beach" width="100%">
+			</section>
+			<!-- Clash of Clans screen -->
+			<section class="game fade">
+				<section class="game_des">
+					<section class="game_details">
+						<h3 style="text-transform: uppercase;">lead your clan to victory!</h3>
+						<p>Answer the call of the mustache! Join the international fray that is Clash of Clans. Customize your village, build an army and<br>
+							crush your opponents. Like using friendship to strike fear into your enemies? Join a Clan, or establish a Clashing legacy by<br>
+							creating your own. The choice is yours in this millions-strong community of Barbarians. Download for free and Clash on, Chief!
+					</section>
+					
+					<section class="game_link">
+						<a href="https://itunes.apple.com/app/clash-of-clans/id529479190?mt=8"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&referrer=mat_click_id%3Df6890da7bad79ed3290aa334b12d358d-20141216-1681"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
+					</section>
+				</section>
+				<img src="clash_banner.png" alt="Clash Of Clans" width="100%">
+			</section>
+			<!-- Clash Royale Screen -->
+			<section class="game fade">
+				<section class="game_des">
+					<section class="game_details">
+						<h3 style="text-transform: uppercase;">epic real-time card battles</h3>
+						<p>Clash Royale is a real-time multiplayer game starring the Royales, your favourite Clash characters and much, much more. Collect,and upgrade<br>
+							dozens of cards featuring the Clash of Clans troops, spells and defenses you know and love, as well as the Royales: Princes, Knights, Baby Dragons<br>
+							and more. Knock the enemy King and Princesses from their towers to defeat your opponents and win Trophies, Crowns and glory in the Arena.
+						</p>
+					</section>
+					
+					<section class="game_link">
+						<a href="https://itunes.apple.com/app/id1053012308?mt=8"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
+					</section>
+				</section>
+				<img src="clashroyale_banner.png" alt="Clash Royale" width="100%" >
+			</section>
+
+			<!-- Hay Day Screen -->
+			<section class="game fade">
+				<section class="game_des">
+					<section class="game_detail_special"> 
+						<!-- Hay Day has slighlty more description  -->
+						<h3 style="text-transform: uppercase;">Farm With Friends and Family</h3>
+						<p>You don't have to be from a farm to be a great farmer. Hay Day lets you get back to nature and experience the simple life of working the land. It's a<br>
+							special game set in a real special place. Food grows free, people smile and the animals are always happy to see you. It never rains here,the crops never<br>
+							die. And if you're craving a little bacon, one of the pigs will be happy to fry some up for you. After all, what are pigs... oops, we mean neighbors for?
+						</p>
+					</section>
+					
+					<section class="game_link">
+						<a href="https://itunes.apple.com/app/hay-day/id506627515?mt=8"><img src="Appstore Supercell.png" alt="Appstore" width= "125px"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.supercell.hayday&referrer=mat_click_id%3D2cff480805f177bb9a0b477c702bec6f-20141216-1681"><img src="Google Play Store Supercell.png" alt="Appstore" width= "140px"></a>
+					</section>
+				</section>
+				<img src="hayday_banner.png" alt= "Hay Day" width="100%">
+			</section>
+
+			<a class="left" onclick="changeImg(-1)"><p>‹</p></a>
+			<a class="right separator" onclick="changeImg(1)"><p>›</p></a>
+		</section> 
+
+		<section style="text-align:center">
+			<section class="nav_bullet" onclick="currentImg(0)"></section> 
+			<section class="nav_bullet" onclick="currentImg(1)"></section> 
+			<section class="nav_bullet" onclick="currentImg(2)"></section> 
+			<section class="nav_bullet" onclick="currentImg(3)"></section> 
+			<section class="nav_bullet" onclick="currentImg(4)"></section> 
 		</section>
+
+		<a class="chat-button" onclick="openChat()"><img src="starr icon.jpg" alt="supercell bot profile picture" width="30%"  style="border-radius: 100%;"></a>
+		<section class="chat-popup" id="conversation">
+			<form class="form-container">
+				<section class="chatbot_header">
+					<img src="starr icon.jpg" alt="supercell bot profile picture" class="profile_picture">
+					<h2>Ask Supercell</h2>
+					<button type="button" class="cancel" onclick="closeChat()">X</button>
+				</section>
+				
+				<section class="first_message">
+					<p>Hello! I'm Supercell's virtual assistant and I am here to assist you. </p>
+				</section>
+				<section class="first_message">
+					<p>Here's a tip: Ask your question in simple and short sentences.</p>
+				</section>
+				<textarea placeholder="Type your message here" name="msg" required></textarea>
+
+				<button type="submit" class="btn">Send</button>
+				
+			</form>
+		</section>
+
+		<script src="assignment.js"></script>
+
+
 		<footer role="contentinfo" class="footer_ext">
 			<section class= "footer_int">
 				<nav class="footer_nav_options">	
@@ -127,8 +215,8 @@
 						</ul>
 					</nav>
 				</section>
-				<section class="btn">
-					<a href="">To the Surface</a>
+				<section class="surface_btn">
+					<button class="surface_btn" onclick="ToTop()">To the Surface</button>
 				</section>
 			</section>
 		</footer>
