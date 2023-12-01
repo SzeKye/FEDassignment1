@@ -16,6 +16,8 @@ With a total revenue of approximately 1.87 billion USD and a reported
 each game is about, static website design which makes it unattractive.
 
 
+- Link to all wireframes: https://www.figma.com/file/z3MgBGIYO3AhtqMhQwLNgD/Supercell?type=design&node-id=0%3A1&mode=design&t=VKYcRT8xsiYZJXkt-1
+
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 - As a user type, I want to perform an action, so that I can achieve a goal.
