@@ -18,7 +18,7 @@
             display: flex;
             flex-direction: row;
             width:100%;
-            margin-bottom: 20em;
+            margin-bottom: 10em;
         }
         #support_hero{
             padding-bottom: 10px;
@@ -33,27 +33,68 @@
         .support_container h3{
             font-size: 2em;
         }
+        @media screen and (max-width:576px) {
+			.hero_txt{
+				top: 35%;
+			}
+			.hero_txt h1{
+				font-size: 25px;
+			}
+			.hero_txt p{
+				font-size: 12px;
+			}
+            .support_container{
+                margin: 0 2vw;
+            }
+            .support_container h2{
+                font-size: 30px;
+            }
+            .support_container h3{
+                font-size: 20px;
+            }
+            .legal{
+				flex-direction: column;
+			}
+			.footer_nav_options{
+				align-items: start;
+				flex-direction: column;
+			}
+			.chat-button{
+				right: -150px;
+			}
+			.chat-button img{
+				width: 20%;
+			}
+            .vid_container iframe{
+                width: 100%;
+                height:80vh
+            }
+            .vid_container{
+                margin-bottom: -5px;
+            }
+        }
     </style>
     <body>
         <header>
             <section class="nav_bar">
-				<nav class="header_nav_options">
-					<a href="/index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+				<a href="/index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+				<section class="header_nav_options" id="header_nav">
+					<a href="Games.html" class="header_options">Games</a>
+					<a href="Support.html" class="header_options">Support</a>
+					<a href="About Us.html"class="header_options">About Us</a>
+					<a href="Our Offices.html"class="header_options">Work With Us</a>
 
-					<section id="header_options">
-						<a href="Games.html">Games</a>
-						<a href="Support.html">Support</a>
-						<a href="About Us.html">About Us</a>
-						<a href="Our Offices.html">Work With Us</a>
-                    </section>
-
-					<section id= "header_related">
-						<a href="#https://creators.supercell.com/en"><img src="images/creators.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
-						<a ><img src="images/search.png" alt="search" width= "20px"></a>
-					</section>
-                </nav>
+					<a href="#https://creators.supercell.com/en" ><img src="images/creators.png" alt="Supercell"  width= "36px" id="section_divider"></a>
+					<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" width= "36px"></a>
+					<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" width= "36px"></a>
+					<a style="margin-top: 5px;"><img src="images/search.png" alt="search" width= "20px"></a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<section class="icon_creation"></section>
+						<section class="icon_creation"></section>
+						<section class="icon_creation"></section>
+					</a>
+					
+				</section>
 				
             </section>	
         </header>

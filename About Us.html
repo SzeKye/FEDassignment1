@@ -40,28 +40,97 @@
           position: absolute;
           color: #fff;
         }
+
+        @media screen and (max-width:576px) {
+          .hero_txt{
+            top: 20%;
+          }
+          .hero_txt h1{
+            font-size: 25px;
+          }
+          .hero_txt p{
+            font-size: 12px;
+          }
+          .belief_des{
+            padding: 0 1em;
+          }
+          .question h2{
+            font-size: 25px;
+          }
+          .secondary_news_article{
+            position: relative;
+            margin: 10px;
+          }
+          .secondary_news_article img{
+            width: 100%;
+          }
+          .news_title{
+            margin-top: -4em;
+          }
+          .news_title2{
+            padding-left: 12em;
+            padding-right: 0;
+            margin-top: -4em;
+          }
+          .news_title p, .news_title2 p{
+            font-size: 10px;
+            margin: 5px;
+          }
+          .news_title2 h2, .news_title h2{
+            font-size: 13px;
+            margin: 5px;
+          }
+          .legal{
+            flex-direction: column;
+          }
+          .footer_nav_options{
+            align-items: start;
+            flex-direction: column;
+          }
+          .chat-button{
+            right: -150px;
+          }
+          .chat-button img{
+            width: 20%;
+          }
+          #supercell_title{
+            flex-direction: column;
+            justify-content: center;
+          }
+          #supercell_description {
+            width: 100%;
+            justify-content: center;
+            padding: 0 15px;
+          }
+          #supercell_stats{
+            width: 100%;
+          }
+        }
+
       </style>
     <body>
       <header>
         <section class="nav_bar">
-          <nav class="header_nav_options">
-            <a href="index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
-
-            <section id="header_options">
-              <a href="Games.html">Games</a>
-              <a href="Support.html">Support</a>
-              <a href="About Us.html">About Us</a>
-              <a href="Our Offices.html">Work With Us</a>
-            </section>
-
-            <section id= "header_related">
-              <a href="#https://creators.supercell.com/en"><img src="images/creators.png" alt="Supercell" class = "icon" width= "36px"></a>
-              <a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" class = "icon" width= "36px"></a>
-              <a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
-              <a><img src="images/search.png" alt="search" width= "20px"></a>
-            </section>
-          </nav>
-        </section>	
+          <a href="/index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+          <section class="header_nav_options" id="header_nav">
+            <a href="Games.html" class="header_options">Games</a>
+            <a href="Support.html" class="header_options">Support</a>
+            <a href="About Us.html"class="header_options">About Us</a>
+            <a href="Our Offices.html"class="header_options">Work With Us</a>
+  
+            <a href="#https://creators.supercell.com/en" ><img src="images/creators.png" alt="Supercell"  width= "36px" id="section_divider"></a>
+            <a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" width= "36px"></a>
+            <a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" width= "36px"></a>
+            <a style="margin-top: 5px;"><img src="images/search.png" alt="search" width= "20px"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <section class="icon_creation"></section>
+              <section class="icon_creation"></section>
+              <section class="icon_creation"></section>
+            </a>
+            
+          </section>
+          
+              </section>	
       </header>
 		<section>
 			<img src="images/Aboutus_hero.png" alt="Hero" width= "100%">
@@ -74,12 +143,12 @@
     </h1>
     <section id="supercell_title">
       <section id= "supercell_description">
-        <p>Supercell is a game company based in Helsinki, Finland,<br>
-        with offices in San Francisco, Seoul and Shanghai. Since<br>
-        our launch in 2010, we've brought five games to the<br>
-        global market - Hay Day, Clash of Clans, Boom Beach,<br>
-        Clash Royale and Brawl Stars. Our dream is to create great<br>
-        games that as many people as possible play for years and<br>
+        <p>Supercell is a game company based in Helsinki, Finland,
+        with offices in San Francisco, Seoul and Shanghai. Since
+        our launch in 2010, we've brought five games to the
+        global market - Hay Day, Clash of Clans, Boom Beach,
+        Clash Royale and Brawl Stars. Our dream is to create great
+        games that as many people as possible play for years and
         that are remembered forever.<br><br><br>
         Read more about us and our history below.
         </p>
@@ -99,17 +168,17 @@
         <section class="belief_title"><h2>Our Beliefs, Our Legacy</h2></section>
         <section class="belief_des">
           <p>
-            Supercell was founded on the idea of giving game developers and teams the <br>
-            independence to decide what kinds of games they make and how they choose <br>
-            to make them. Over a decade and five global games later, our dream still stands: <br>
-            to create great games that as many people as possible play for years and that <br>
-            are remembered forever.<br><br>We believe games have the power to bring people around the world together <br>
-            and closer to each other. We work to create new, innovative, memorable <br>
-            experiences no one has played before. This is why we try to design games that <br>
-            excite wide and diverse player communities as well as to expand the audience <br>
-            for otherwise smaller “niche” game concepts.<br><br>There's no simple recipe or magic formula to achieve our dream. What <br>
-            we do know, however, is that without players Supercell doesn't exist. <br>Creating lovable worlds and characters that players want to come back<br>
-            to over and over again is at the heart of how we design and operate our <br>games.
+            Supercell was founded on the idea of giving game developers and teams the 
+            independence to decide what kinds of games they make and how they choose 
+            to make them. Over a decade and five global games later, our dream still stands: 
+            to create great games that as many people as possible play for years and that 
+            are remembered forever.<br><br>We believe games have the power to bring people around the world together 
+            and closer to each other. We work to create new, innovative, memorable 
+            experiences no one has played before. This is why we try to design games that 
+            excite wide and diverse player communities as well as to expand the audience 
+            for otherwise smaller “niche” game concepts.<br><br>There's no simple recipe or magic formula to achieve our dream. What
+            we do know, however, is that without players Supercell doesn't exist. Creating lovable worlds and characters that players want to come back
+            to over and over again is at the heart of how we design and operate our games.
           </p>
         </section>
         

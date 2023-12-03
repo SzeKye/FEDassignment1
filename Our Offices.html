@@ -10,26 +10,97 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
       </head>
+	  <style>
+		@media screen and (max-width:576px) {
+			.hero_txt{
+				top: 20%;
+			}
+			.hero_txt h1{
+				font-size: 25px;
+			}
+			.hero_txt p{
+				font-size: 12px;
+			}
+			.des_container{
+				padding: 15px;
+				font-size: 20px;
+			}
+			.des_container p{
+				font-size: 20px;
+			}
+			.office_locations{
+				font-size: 17px;
+				gap:10px;
+				padding: 0 29px;
+			}
+			#location h1 #open_positions h2{
+				font-size: 30px;
+			}
+			#location h2{
+				font-size: 20px;
+			}
+			.vid_container iframe{
+				width: 100%;
+				height:70vh
+			}
+			.img_container, .img_container2{
+				gap: 24px;
+				margin: 0;
+			}
+			.img_1 img, .img_2 img,.img_3 img, .img_4 img, .img_5 img{
+				width: 100%;
+			}
+			.img_container, .img_container2{
+				flex-direction: column;
+			}
+			.img_container{
+				margin-bottom: 24px;
+			}
+			
+			.img_4, .img_5{
+				padding: 0;
+			}
+
+			.career_category,.career_position{
+				display: none;
+			}
+
+		  	.legal{
+            	flex-direction: column;
+          	}
+			.footer_nav_options{
+				align-items: start;
+				flex-direction: column;
+			}
+			.chat-button{
+				right: -150px;
+			}
+			.chat-button img{
+				width: 20%;
+			}
+		}
+	  </style>
     <body>
         <header>
             <section class="nav_bar">
-				<nav class="header_nav_options">
-					<a href="index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+				<a href="/index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+				<section class="header_nav_options" id="header_nav">
+					<a href="Games.html" class="header_options">Games</a>
+					<a href="Support.html" class="header_options">Support</a>
+					<a href="About Us.html"class="header_options">About Us</a>
+					<a href="Our Offices.html"class="header_options">Work With Us</a>
 
-					<section id="header_options">
-						<a href="Games.html">Games</a>
-						<a href="Support.html" >Support</a>
-						<a href="About Us.html">About Us</a>
-						<a href="Our Offices.html" >Work With Us</a>
-                    </section>
-
-					<section id= "header_related">
-						<a href="#https://creators.supercell.com/en"><img src="images/creators.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
-						<a href="#https://supercell.com/en/supercell-id/"><img src="images/search.png" alt="search" width= "20px"></a>
-					</section>
-                </nav>
+					<a href="#https://creators.supercell.com/en" ><img src="images/creators.png" alt="Supercell"  width= "36px" id="section_divider"></a>
+					<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" width= "36px"></a>
+					<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" width= "36px"></a>
+					<a style="margin-top: 5px;"><img src="images/search.png" alt="search" width= "20px"></a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<section class="icon_creation"></section>
+						<section class="icon_creation"></section>
+						<section class="icon_creation"></section>
+					</a>
+					
+				</section>
 				
             </section>	
         </header>
@@ -41,9 +112,9 @@
 			</section>
 		</section>
 		<section class="des_container">
-			<p>Our global teams are home to individuals from over 40 nationalities. We<br>
-			believe in transparency, open communication and spending time with one<br> 
-			another. While all teams have their own unique traits, it's the underlying<br> 
+			<p>Our global teams are home to individuals from over 40 nationalities. We
+			believe in transparency, open communication and spending time with one 
+			another. While all teams have their own unique traits, it's the underlying
 			culture, shared values and love for games that keep us together.</p>
 		</section>
 
@@ -63,9 +134,9 @@
 		</section>
 		<section class ="des_container">
 			<p>
-				It's a poorly kept secret that Supercell's first office was a snug 35m<sup>2</sup> room that had to fit 15 people,<br>
-				their laptops and a coffee-maker. Eventually the CEO moved his desk (a cardboard box at the time)<br>
-				out into the hallway to free up some space. In 2021, after outgrowing a number of locations around<br>
+				It's a poorly kept secret that Supercell's first office was a snug 35m<sup>2</sup> room that had to fit 15 people,
+				their laptops and a coffee-maker. Eventually the CEO moved his desk (a cardboard box at the time)
+				out into the hallway to free up some space. In 2021, after outgrowing a number of locations around
 				Helsinki, we opened our own, custom-designed office on the seafront, just south of the city center.
 			</p>
 		</section>
@@ -85,13 +156,13 @@
 		</section>
 		
 		<section class="des_container">
-			<p>The Helsinki office is home to over 250 passionate professionals from various backgrounds and <br>
-				walks of life. Arounds two thirds of us are directly involved with making games. In addition to five <br>
-				live teams of roughly 10-25 people each, we have numerous new game teams at prototype stage <br>
-				working in pairs, trios and more. We mostly stick to speaking in English for work, but you'll hear <br>
+			<p>The Helsinki office is home to over 250 passionate professionals from various backgrounds and 
+				walks of life. Arounds two thirds of us are directly involved with making games. In addition to five 
+				live teams of roughly 10-25 people each, we have numerous new game teams at prototype stage 
+				working in pairs, trios and more. We mostly stick to speaking in English for work, but you'll hear 
 				chatter in languages from all over the world around the office.<br><br>
-				Every week starts with a company breakfast while on Fridays we get together for an all-hands <br>
-				gathering to share game updates and company news. This often gives way to refreshments, play<br>
+				Every week starts with a company breakfast while on Fridays we get together for an all-hands 
+				gathering to share game updates and company news. This often gives way to refreshments, play
 				sessions and casual conversations.
 			</p>
 		</section>

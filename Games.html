@@ -18,28 +18,86 @@
 		#game_hero{
 			margin: -4px;
 		}
+		.nav_bullet_section{
+			text-align:center
+		}
+		@media screen and (max-width:576px) {
+			.hero_txt{
+				top: 25%;
+			}
+			.hero_txt h1{
+				font-size: 25px;
+			}
+			.hero_txt p{
+				font-size: 12px;
+			}
+			.show{
+				width:70px;
+			}
+			.nav_bullet{
+				width: 28px;
+			}
+			.game_details{
+				padding: 0 2em;
+				margin: 0;
+			}
+			.game_des{
+				margin: 16em 1em 0;
+				background-color: rgba(0,0,0, 0.8);
+				flex-direction: column;
+			}
+			.game_des p{
+				font-size: 10px;
+			}
+			.game_des h3{
+				font-size: 20px;
+				margin-bottom: 5px;
+			}
+			.game_link{
+				margin: 0;
+			}
+			.game_link img{
+				width:85px
+			}
+			.nav_bullet_section{
+				margin-bottom: 11em;
+			}
+			.legal{
+				flex-direction: column;
+			}
+			.footer_nav_options{
+				align-items: start;
+				flex-direction: column;
+			}
+			.chat-button{
+				right: -150px;
+			}
+			.chat-button img{
+				width: 20%;
+			}
+		}
 	</style>
     <body>
         <header>
             <section class="nav_bar">
-				<nav class="header_nav_options">
-					<a href="index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+				<a href="/index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
+				<section class="header_nav_options" id="header_nav">
+					<a href="Games.html" class="header_options">Games</a>
+					<a href="Support.html" class="header_options">Support</a>
+					<a href="About Us.html"class="header_options">About Us</a>
+					<a href="Our Offices.html"class="header_options">Work With Us</a>
 
-					<section id="header_options">
-						<a href="Games.html">Games</a>
-						<a href="Support.html">Support</a>
-						<a href="About Us.html">About Us</a>
-						<a href="Our Offices.html">Work With Us</a>
-                    </section>
-
-					<!-- supercell id, make, and creator program   -->
-					<section id= "header_related"> 
-						<a href="#https://creators.supercell.com/en"><img src="images/creators.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" class = "icon" width= "36px"></a>
-						<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" class = "icon" width= "36px"></a>
-						<a><img src="images/search.png" alt="search" width= "20px"></a>
-					</section>
-                </nav>
+					<a href="#https://creators.supercell.com/en" ><img src="images/creators.png" alt="Supercell"  width= "36px" id="section_divider"></a>
+					<a href="#https://make.supercell.com/en/"><img src="images/make.png" alt="Supercell" width= "36px"></a>
+					<a href="Sign In.html"><img src="images/id.png" alt="Supercell ID" width= "36px"></a>
+					<a style="margin-top: 5px;"><img src="images/search.png" alt="search" width= "20px"></a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<section class="icon_creation"></section>
+						<section class="icon_creation"></section>
+						<section class="icon_creation"></section>
+					</a>
+					
+				</section>
 				
             </section>	
         </header>
@@ -58,8 +116,8 @@
 				<section class="game_des">
 					<section class="game_details">
 						<h3 style="text-transform: uppercase;">3v3 and battle royale</h3>
-						<p>Time to BRAWL! Team up with your friends and get ready for epic multiplayer MAYHEM! Brawl Stars is the<br>
-							newest game from the makers of Clash of Clans and Clash Royale. Jump into your favorite game mode<br>
+						<p>Time to BRAWL! Team up with your friends and get ready for epic multiplayer MAYHEM! Brawl Stars is the
+							newest game from the makers of Clash of Clans and Clash Royale. Jump into your favorite game mode
 							and play quick matches with your friends. Shoot 'em up, blow 'em up, punch 'em out and win the BRAWL.
 						</p>
 					</section>
@@ -76,8 +134,8 @@
 				<section class="game_des">
 					<section class="game_details">
 						<h3 style="text-transform: uppercase;">Build. Plan. Boom</h3>
-						<p>Come with a plan or leave in defeat! Welcome to Boom Beach, an epic combat strategy game where your brains and your troop's brawn fight<br>
-							against the evil Blackguard. Attack bases to free enslaved islanders or create a task force with friends and other players to take on<br>
+						<p>Come with a plan or leave in defeat! Welcome to Boom Beach, an epic combat strategy game where your brains and your troop's brawn fight
+							against the evil Blackguard. Attack bases to free enslaved islanders or create a task force with friends and other players to take on
 							the enemy together, all while exploring and unlocking secrets, of this beautiful archipelago. Scout, plan, then BOOM THE BEACH!
 						</p>
 					</section>
@@ -94,8 +152,8 @@
 				<section class="game_des">
 					<section class="game_details">
 						<h3 style="text-transform: uppercase;">lead your clan to victory!</h3>
-						<p>Answer the call of the mustache! Join the international fray that is Clash of Clans. Customize your village, build an army and<br>
-							crush your opponents. Like using friendship to strike fear into your enemies? Join a Clan, or establish a Clashing legacy by<br>
+						<p>Answer the call of the mustache! Join the international fray that is Clash of Clans. Customize your village, build an army and
+							crush your opponents. Like using friendship to strike fear into your enemies? Join a Clan, or establish a Clashing legacy by
 							creating your own. The choice is yours in this millions-strong community of Barbarians. Download for free and Clash on, Chief!
 					</section>
 					
@@ -111,8 +169,8 @@
 				<section class="game_des">
 					<section class="game_details">
 						<h3 style="text-transform: uppercase;">epic real-time card battles</h3>
-						<p>Clash Royale is a real-time multiplayer game starring the Royales, your favourite Clash characters and much, much more. Collect,and upgrade<br>
-							dozens of cards featuring the Clash of Clans troops, spells and defenses you know and love, as well as the Royales: Princes, Knights, Baby Dragons<br>
+						<p>Clash Royale is a real-time multiplayer game starring the Royales, your favourite Clash characters and much, much more. Collect,and upgrade
+							dozens of cards featuring the Clash of Clans troops, spells and defenses you know and love, as well as the Royales: Princes, Knights, Baby Dragons
 							and more. Knock the enemy King and Princesses from their towers to defeat your opponents and win Trophies, Crowns and glory in the Arena.
 						</p>
 					</section>
@@ -128,11 +186,11 @@
 			<!-- Hay Day Screen -->
 			<section class="game fade">
 				<section class="game_des">
-					<section class="game_detail_special"> 
+					<section class="game_details"> 
 						<!-- Hay Day has slighlty more description  -->
 						<h3 style="text-transform: uppercase;">Farm With Friends and Family</h3>
-						<p>You don't have to be from a farm to be a great farmer. Hay Day lets you get back to nature and experience the simple life of working the land. It's a<br>
-							special game set in a real special place. Food grows free, people smile and the animals are always happy to see you. It never rains here,the crops never<br>
+						<p>You don't have to be from a farm to be a great farmer. Hay Day lets you get back to nature and experience the simple life of working the land. It's a
+							special game set in a real special place. Food grows free, people smile and the animals are always happy to see you. It never rains here,the crops never
 							die. And if you're craving a little bacon, one of the pigs will be happy to fry some up for you. After all, what are pigs... oops, we mean neighbors for?
 						</p>
 					</section>
@@ -149,7 +207,7 @@
 			<a class="right separator" onclick="changeImg(1)"><p>›</p></a>
 		</section> 
 
-		<section style="text-align:center">
+		<section class="nav_bullet_section">
 			<section class="nav_bullet" onclick="currentImg(0)"></section> 
 			<section class="nav_bullet" onclick="currentImg(1)"></section> 
 			<section class="nav_bullet" onclick="currentImg(2)"></section> 
@@ -180,7 +238,6 @@
 		</section>
 
 		<script src="assignment.js"></script>
-
 
 		<footer role="contentinfo" class="footer_ext">
 			<section class= "footer_int">

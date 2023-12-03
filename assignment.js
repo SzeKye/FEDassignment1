@@ -3,6 +3,14 @@ function ToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function myFunction() {
+  var x = document.getElementById("header_nav");
+  if (x.className === "header_nav_options") {
+    x.className += " responsive";
+  } else {
+    x.className = "header_nav_options";
+  }
+}
 
 // displays the games under games.html
 var img_number = 0; //first element in arrays have an index of 0
@@ -37,7 +45,6 @@ function imgShow(x) {
   imgs_array[img_number].style.display = "flex";  //shows the image 
   nav_bullet_array[img_number].className += " show"; //sets the respective bullet of the img to show 
 }
-
 // Chatbot conversation
 function openChat() {
   document.getElementById("conversation").style.display = "block";

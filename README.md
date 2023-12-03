@@ -10,10 +10,16 @@ With a total revenue of approximately 1.87 billion USD and a reported
  
  - To attract more players; currently Supercell is more popular amongst younger audiences because of their more popular games but could overshadowed by other more popular games due to external factors such as local news and peer pressure. Some examples are Valorant ( Cue, 2023 ) and Mobile Legends Bang Bang ( Cue, 2023 a). Additionally, the maker must also be made known to the other age groups so that people know that Supercell is not only known for one good game but many.
 
- - Make the website more user-friendly for all target audiences.
-
  - Current website design lacks information about what
-each game is about, static website design which makes it unattractive.
+each game is about, static website design as well as the lack of a vibrancy of colours makes it unattractive.
+
+- As a an existing player/ newcomer, I would like to have the option to log in to my account to get access to features such as player support.
+
+- As an existing player, I would like to be able to show that the maker of the games that I play has modern user interfaces and look attractive so as to convince my friends to join me in the games that I play by showing them that the maker keeps up with the times. 
+
+- As a fresh graduate looking for career opportunities, I would like to know whether Supercell has any open positions and in which countries are these positions in. 
+
+- As a student conducting research about the company, I would like to know more about the company by looking through their website. 
 
 
 - Link to all wireframes: https://www.figma.com/file/z3MgBGIYO3AhtqMhQwLNgD/Supercell?type=design&node-id=0%3A1&mode=design&t=VKYcRT8xsiYZJXkt-1
