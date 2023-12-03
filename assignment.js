@@ -3,7 +3,7 @@ function ToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function myFunction() {
+function myFunction() { // hamburger menu for the header
   var x = document.getElementById("header_nav");
   if (x.className === "header_nav_options") {
     x.className += " responsive";
@@ -30,7 +30,7 @@ function imgShow(x) {
   let i;
   let imgs_array = document.getElementsByClassName("game");
   let nav_bullet_array = document.getElementsByClassName("nav_bullet");
-  if (x > imgs_array.length-1) {
+  if (x > imgs_array.length-1) { //for the arrows
     img_number = 0
       }    //last img goes to first img in the array
   if (x < 0) {
@@ -40,7 +40,7 @@ function imgShow(x) {
     imgs_array[i].style.display = "none";  
   }
   for (i = 0; i < nav_bullet_array.length; i++) {
-    nav_bullet_array[i].className = nav_bullet_array[i].className.replace("show", ""); //removes the active class of all elements in nav_bullet array
+    nav_bullet_array[i].className = nav_bullet_array[i].className.replace("show", ""); //removes any classes called show from all elements in the nav_bullet_array
   }
   imgs_array[img_number].style.display = "flex";  //shows the image 
   nav_bullet_array[img_number].className += " show"; //sets the respective bullet of the img to show 
