@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,57 +9,58 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    </head>
-    <style>
-        #form_header h1{
-            color: #000;
-        }
-
-        .form{
-            display: inline-block;
-            width: 100%;
-        }
-
-        #login_details{
-            padding: 0 45vw;
-        }
-
-        #form_header{
-            text-align: center;
-        }
-        #login_img{
-            text-align: center;
-        }
-        .btn{
-            background-color: #2D85F3;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            margin: 10px 2px;
-            font-size: 16px; 
-            border-radius: 10px;
-            width:15em;
-            font-weight: 500;
-            border: none;
-        }
-        #username, #password{
-            background-color: #f2f2f2;
-            border: none;
-            width: 200px;
-            height: 39px;
-            border-radius: 8px;
-        }
-        @media screen and (max-width:576px) {
+        <style>
+            #form_header h1{
+                color: #000;
+            }
+    
+            .form{
+                display: inline-block;
+                width: 100%;
+            }
+    
             #login_details{
-                padding: 0 27vw;
+                padding: 0 45vw;
             }
-            #login_img img{
-                width: 60%;
+    
+            #form_header{
+                text-align: center;
             }
-        }
-    </style>
+            #login_img{
+                text-align: center;
+            }
+            .btn{
+                background-color: #2D85F3;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                margin: 10px 2px;
+                font-size: 16px; 
+                border-radius: 10px;
+                width:15em;
+                font-weight: 500;
+                border: none;
+            }
+            #username, #password{
+                background-color: #f2f2f2;
+                border: none;
+                width: 200px;
+                height: 39px;
+                border-radius: 8px;
+            }
+            @media screen and (max-width:576px) {
+                #login_details{
+                    padding: 0 27vw;
+                }
+                #login_img img{
+                    width: 60%;
+                }
+            }
+        </style>
+    </head>
+    
     <header>
         <section class="nav_bar">
             <a href="index.html"><img src="images/supercell-logo-white-transp.png" alt="Supercell" width= "74"></a>
@@ -72,7 +74,7 @@
                 </section>
                 <section id="login_details">
                     <label for="username">Supercell ID</label><br>
-                    <input type="text" name="username" id="username"placeholder=" Enter Supercell ID" required><br><br>
+                    <input type="text" name="username" id="username" placeholder=" Enter Supercell ID" required><br><br>
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password" placeholder=" Enter Password" required><br>
                     <section id="output">

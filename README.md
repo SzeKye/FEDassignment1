@@ -1,9 +1,10 @@
 # FEDassignment1
 FED assignment 1
+Loh Sze Kye S10257172B 
 # Supercell website revamp
 
 With a total revenue of approximately 1.87 billion USD and a reported
-666.31 million USD for its Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) in the year 2022 (Supercell Annual Revenue 2022 | Statista, 2023). However in the recent years, Supercell has been losing players and has been dropping in popularity around the world. Agreed that Supercell's games have good early, mid and late retention cycles but there are other factors such as the community and listening to the community also play a role in the retention of players. For example, in the latest Clash Royale update titled "The update for losers". The community got mad because most felt that the update did not benefit them but rather, made the game even more pay to win which means that players needed to pay even more money in order to get stronger and better units so as to defeat opponents in-game (Orange Juice Gaming, 2023). Other observed potential problems could be that new players are matched against veteran players due to a possible shortage of new players. As such new players may quit the game due to what they believe is unfair matchmaking. At about 13 years old, there is much potential in the company and its games, but greater international recognition and more players are needed to take the company to greater heights.
+666.31 million USD for its Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) in the year 2022 (Supercell Annual Revenue 2022 | Statista, 2023). However in the recent years, Supercell has been losing players and has been dropping in popularity around the world. Agreed that Supercell's games have good early, mid and late retention cycles but there are other factors such as the community and listening to the community also play a role in the retention of players. For example, in the latest Clash Royale update titled "The update for losers". The community got mad because most felt that the update did not benefit them but rather, made the game even more pay to win which means that players needed to pay even more money in order to get stronger and better units so as to defeat opponents in-game (Orange Juice Gaming, 2023). Other observed potential problems could be that new players are matched against veteran players due to a possible shortage of new players. As such new players may quit the game due to what they believe is unfair matchmaking. At about 13 years old, there is much potential in the company and its games, but greater international recognition and more players are needed to take the company to greater heights. To do so, I believe that giving the website a refreshing new look is one of the best ways to achieve the comapny's goal. 
 
  
 ## Design Process
@@ -22,15 +23,7 @@ each game is about, static website design as well as the lack of a vibrancy of c
 - As a student conducting research about the company, I would like to know more about the company by looking through their website. 
 
 
-- Link to all wireframes: https://www.figma.com/file/z3MgBGIYO3AhtqMhQwLNgD/Supercell?type=design&node-id=0%3A1&mode=design&t=VKYcRT8xsiYZJXkt-1
-
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+- Link to all wireframes (both implemented and unimplemented; there is no wireframe for the log in page): https://www.figma.com/file/z3MgBGIYO3AhtqMhQwLNgD/Supercell?type=design&node-id=0%3A1&mode=design&t=VKYcRT8xsiYZJXkt-1
 
 ## Features
 
@@ -68,19 +61,30 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+- Log in page
+    - Go to the "Log In page" by clicking on the ID icon in the top right hand corner.
+    - ID can only be made of alphanumeric characters.
+    - Password must be more than 8 characters long and must ony contain alphanumeric characters.
+    - Both Supercell ID (username) and password are required. 
+    - Submitting invalid passwords or IDs will result in an alert by the page. A valid submission by right should take the user to the home page. (Bug: unresolved, log in page will just reload instead of taking user to the home page upon a successful log in. )
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+- Brief summary about each game 
+    - Go to the Games page
+    - Use the arrow keys or navigation buttons to navigate between the games.
+    - Navigation should be seamless regardless of direction chosen.
+    - Google Play Store and Appstore links should directly take user to the respective pages on the Google Play Store and Appstore.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+- Current website works best on laptop screens that are fully maximised and screen sizes which are less than 576px which is a smartphone in landscape mode. 
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+- Another interesting bug: an uncaught type error is shown in the console whenever I run the html files, it is about the javascript used in games.html
+The error; Uncaught TypeError TypeError: Cannot read properties of undefined (reading 'style')
+    at imgShow (c:\FED\git\FEDassignment1\assignment.js:45:26)
+    at <anonymous> (c:\FED\git\FEDassignment1\assignment.js:17:1)
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- The external CSS file has been passed through the official (JigSaw) validator and reported no issues.
+
+- All html files have been passed through the W3C validator with no fatal issues however with a lot of warnings about certain sections which lack headings and errors with the filenames having a space in the href and src attributes and the width attribute having a percentage sign in the img tags. 
+
 
 ## Credits
 
