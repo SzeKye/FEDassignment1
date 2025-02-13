@@ -1,6 +1,5 @@
 # FEDassignment1
 FED assignment 1
-Loh Sze Kye S10257172B 
 # Supercell website revamp
 
 With a total revenue of approximately 1.87 billion USD and a reported
